@@ -17,17 +17,31 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url('../public/image.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  line-height: unset;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.header1 {
+  @apply text-h3 text-black leading-none;
+}
+
+.supporting {
+  @apply text-s text-gray4 font-medium;
+}
+
+.title {
+  @apply text-h1 text-black leading-none;
+}
+
+.cta {
+  @apply uppercase font-bold leading-none;
 }
